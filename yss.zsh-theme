@@ -5,7 +5,7 @@
 #
 # Mar 2013 Yad Smood
 
-# Time-stamp: <Sun, 10/09-2017 09:59:16 CST>
+# Time-stamp: <Sun, 10/09-2017 10:14:09 CST>
 # Copyright (c) H.-K.Sun <spin.hk AT outlook DOT com>
 
 # VCS
@@ -67,13 +67,13 @@ local exit_code="%(?,,C:%{$fg[red]%}%?%{$reset_color%})"
 #
 # % ys @ ys-mbp in ~/.oh-my-zsh on git:master x [21:47:42] C:0
 # $
-PROMPT="\
-\033[1m%{$fg[blue]%}#%{$reset_color%} \
+PROMPT="
+%{$terminfo[bold]$fg[blue]%}#%{$reset_color%} \
 %(#,%{$bg[yellow]%}%{$fg[black]%}%n%{$reset_color%},%{$fg[cyan]%}%n)\
 %{$fg[white]%}@\
 %{$fg[green]%}%m \
 %{$fg[white]%}in \
-\033[1m%{$fg[yellow]%}%~%{$reset_color%}\
+%{$terminfo[bold]$fg[yellow]%}%~%{$reset_color%}\
 ${virtualenv_info}\
 ${hg_info}\
 ${git_info} \
